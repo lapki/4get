@@ -7,6 +7,8 @@
  * to select the board's catalog
  * @page $page the boad's page  number
  */
+ 
+ <?php
 class threads
 {
     /**
@@ -56,52 +58,4 @@ class threads
 
         }
 }
-
-$threads = new threads("g",$catalog=false);
-
-$board =  $threads->board . "\n";
-
-//echo $board;
-
-echo "<br>";
-echo "test";
-echo "<br>";
-
-$threads_ = $threads->getThreads();
-
-var_dump(count($threads_));
-//var_dump($threads_[7]) = page 7
-//$p = $threads_[0]['threads'][1];
-//count($threads_) = amount of pages?
-/**
- *
- *
- *function fetchThreads(p) {
- *
- * while (i < len(p['threads']):
- *          echo p[i] //no & last modified
- *      $baseurl = "a.4cdn.org/{$this->board}/thread/{p[i]['no'].json";
- *      $thread = $threads_.fetchPosts($baseurl); //return json_decode($this->_get($baseurl));
- *      return $
- *      $post = new post(thread);
- *
- *function iterPages($threads):
- * //check $this->catalog depending on the value the array will be structured differently
- * for thread in threads:
- *      this->fetchThread(thread)
- *
- *} class Post
- *  public function __construct($post = $thread['post')[x[ {
-$this->no = $post['no'];
-$this->name = $post['name'];
-$this->trip = $post['trip'];
-$this->subject = $post['subject']
- *
- * }
- * $post = new Post($thread['post'][x])
- * $post->no;
- * $post->name;
- * $post->trip;
- * $post ->subject;
- *
- */
+?>
